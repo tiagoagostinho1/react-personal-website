@@ -14,7 +14,13 @@ function App() {
       <>
         <HeaderSimple/>
         <HeroContentLeft/>
-        <FeatureCard/>
+
+        <FeatureCard 
+          isShowTextOnLeft = {true}
+          description = {'Build fully functional accessible web applications faster than ever – Mantine includes more than 120 customizable components and hooks to cover you in any situation'}
+        />
+        <FeatureCard isShowTextOnLeft={false}/>
+
         <FooterSocial/>
       </>
     }</MantineProvider>;
